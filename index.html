@@ -20,11 +20,44 @@ si quiero que git me haga un seguimiento y copia de resapaldo
 GIT BASH HERE en la carpeta (así no tenemos que entrar en subcarpetas hasta llegar a la nuestra)
 ponemos GIT INIT (y ya creamos el repositorio, no vemos nada pero lo hace internamente)
 
-Si tenemos dos directorios y 2 archivos creados recientemente, si hacer seguimientos
+Si tenemos dos directorios y 2 archivos creados recientemente, sin hacer seguimientos
 
-git status -s
+---------------------------------------------------------------------
+git status -s:
 
 nos da listado de los directorios y archivos que tenemos en la carpeta del proyecto
-si nos da interrogantes rojos: es que no están en seguimiento por git
+si nos da interrogantes rojos: es que no están en seguimiento por git (no puede crear copias de respaldos)
+
+---------------------------------------------------------------------
+git add index.html (nombre del archivo):
+nos agrega un archivo en particular para seguimiento o monitoreando (se encuentra en el area del ensayo)
+
+
+---------------------------------------------------------------------
+para tomar una instantanea o capturar el trabajo hecho hasta el momento
+y realizar una descripcion -m " " (entre comillas la descripcion):
+
+git commit -m "Comienzo del proyecto"
+
+con esto hace un respaldo del archivo html
+
+
+---------------------------------------------------------------------
+si hacemos modificaciones al archivo
+si colocamos:
+git status -s
+nos informa con M EN ROJO, que no ha sido respaldada la modificacion
+en cambio con una A EN VERDE, que si    
+
+
+por lo que tendriamos que realizar git commit -m "" (una descripcion de lo que realizamos)
+si hacemos directamente nos va a decir: que no llevamos al area de ensayo
+y también si hay archivos sin ensayos
+
+por lo tanto hay que hacer referencia que tiene una ultima version y despues hacer el commit (se prepara el archivo):
+git add index.html
+git commit -m "" (una descripcion de lo que realizamos)
+
+---------------------------------------------------------------------
 
 -->
